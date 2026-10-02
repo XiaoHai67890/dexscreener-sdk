@@ -1,0 +1,22 @@
+# BasicAdsFlow
+
+main: kit: flow: BasicAdsFlow:
+{
+  entity: "ads",
+  kind: "basic",
+  name: "BasicAdsFlow",
+  step: [
+    {
+      o: "list",
+      v: [
+        {
+          apply: "ItemExists",
+          def: {
+            ref: "ads_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicAdsFlow"
+}

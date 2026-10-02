@@ -1,0 +1,22 @@
+# BasicBoostFlow
+
+main: kit: flow: BasicBoostFlow:
+{
+  entity: "boost",
+  kind: "basic",
+  name: "BasicBoostFlow",
+  step: [
+    {
+      o: "list",
+      v: [
+        {
+          apply: "ItemExists",
+          def: {
+            ref: "boost_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicBoostFlow"
+}

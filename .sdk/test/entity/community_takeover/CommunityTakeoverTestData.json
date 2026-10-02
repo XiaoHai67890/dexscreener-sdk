@@ -1,0 +1,57 @@
+{
+  "existing": {
+    "community_takeover": {
+      "COMMUNITY_TAKEOVER00": {
+        "chainId": "s50",
+        "claimDate": "s51",
+        "description": "s52",
+        "header": "s53",
+        "icon": "s54",
+        "links": [],
+        "tokenAddress": "s56",
+        "url": "s57"
+      },
+      "COMMUNITY_TAKEOVER01": {
+        "chainId": "sa0",
+        "claimDate": "sa1",
+        "description": "sa2",
+        "header": "sa3",
+        "icon": "sa4",
+        "links": [],
+        "tokenAddress": "sa6",
+        "url": "sa7"
+      },
+      "COMMUNITY_TAKEOVER02": {
+        "chainId": "sf0",
+        "claimDate": "sf1",
+        "description": "sf2",
+        "header": "sf3",
+        "icon": "sf4",
+        "links": [],
+        "tokenAddress": "sf6",
+        "url": "sf7"
+      }
+    }
+  },
+  "new": {
+    "community_takeover": {
+      "community_takeover_ref01": {
+        "chainId": "s140",
+        "claimDate": "s141",
+        "description": "s142",
+        "header": "s143",
+        "icon": "s144",
+        "links": [],
+        "tokenAddress": "s146",
+        "url": "s147"
+      }
+    }
+  },
+  "requests": {
+    "GET /community-takeovers/latest/v1": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

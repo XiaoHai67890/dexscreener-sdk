@@ -1,0 +1,189 @@
+# Entity: tokens_pair
+
+main: kit: entity: tokens_pair: {
+
+  alias: field: {}
+
+  fields: {
+    baseToken: {
+      h: "Base Token"
+      n: "baseToken"
+      r: false
+      t: "`$OBJECT`"
+    }
+    boosts: {
+      h: "Boosts"
+      n: "boosts"
+      r: false
+      t: "`$OBJECT`"
+    }
+    chainId: {
+      h: "Chain Id"
+      n: "chainId"
+      r: false
+      t: "`$STRING`"
+    }
+    dexId: {
+      h: "Dex Id"
+      n: "dexId"
+      r: false
+      t: "`$STRING`"
+    }
+    fdv: {
+      h: "Fdv"
+      n: "fdv"
+      r: false
+      t: "`$NUMBER`"
+    }
+    info: {
+      h: "Info"
+      n: "info"
+      r: false
+      t: "`$OBJECT`"
+    }
+    labels: {
+      h: "Labels"
+      n: "labels"
+      r: false
+      t: "`$ARRAY`"
+    }
+    liquidity: {
+      h: "Liquidity"
+      n: "liquidity"
+      r: false
+      t: "`$OBJECT`"
+    }
+    marketCap: {
+      h: "Market Cap"
+      n: "marketCap"
+      r: false
+      t: "`$NUMBER`"
+    }
+    pairAddress: {
+      h: "Pair Address"
+      n: "pairAddress"
+      r: false
+      t: "`$STRING`"
+    }
+    pairCreatedAt: {
+      h: "Pair Created At"
+      n: "pairCreatedAt"
+      r: false
+      t: "`$INTEGER`"
+    }
+    priceChange: {
+      h: "Price Change"
+      n: "priceChange"
+      r: false
+      t: "`$OBJECT`"
+    }
+    priceNative: {
+      h: "Price Native"
+      n: "priceNative"
+      r: false
+      t: "`$STRING`"
+    }
+    priceUsd: {
+      h: "Price Usd"
+      n: "priceUsd"
+      r: false
+      t: "`$STRING`"
+    }
+    quoteToken: {
+      h: "Quote Token"
+      n: "quoteToken"
+      r: false
+      t: "`$OBJECT`"
+    }
+    txns: {
+      h: "Txns"
+      n: "txns"
+      r: false
+      t: "`$OBJECT`"
+    }
+    url: {
+      fo: "uri"
+      h: "Url"
+      n: "url"
+      r: false
+      t: "`$STRING`"
+    }
+    volume: {
+      h: "Volume"
+      n: "volume"
+      r: false
+      t: "`$OBJECT`"
+    }
+  }
+
+  name: "tokens_pair"
+  op: {
+    list: {
+      name: "list"
+      points: [
+        {
+          co: {
+            id: "GET /token-pairs/v1/{chainId}/{tokenAddress}"
+            source: "openapi3"
+            version: 2
+          }
+          g: {
+            params: [
+              {
+                ex: "solana"
+                k: "param"
+                n: "chain_id"
+                or: "chainId"
+                r: true
+                t: "`$STRING`"
+              }
+              {
+                ex: "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN"
+                k: "param"
+                n: "token_address"
+                or: "tokenAddress"
+                r: true
+                t: "`$STRING`"
+              }
+            ]
+          }
+          m: "GET"
+          o: "/token-pairs/v1/{chainId}/{tokenAddress}"
+          q: {
+            exist: [
+              "chain_id"
+              "token_address"
+            ]
+          }
+          r: {
+            param: {
+              chainId: "chain_id"
+              tokenAddress: "token_address"
+            }
+          }
+          s: [
+            {
+              lit: "token-pairs"
+            }
+            {
+              lit: "v1"
+            }
+            {
+              var: "chain_id"
+            }
+            {
+              var: "token_address"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+      ]
+    }
+  }
+
+
+
+}

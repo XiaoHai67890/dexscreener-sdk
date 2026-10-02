@@ -1,0 +1,25 @@
+{
+  "startedAt": "2026-10-02T05:59:13.655Z",
+  "runtime": "v24.19.0",
+  "mode": "live",
+  "query": "WETH/USDC",
+  "requests": [{
+    "method": "GET",
+    "url": "https://api.dexscreener.com/latest/dex/search?q=WETH%2FUSDC",
+    "status": 200,
+    "durationMs": 201
+  }],
+  "checks": [{ "name": "search returns a non-empty array", "pass": true }],
+  "search": {
+    "count": 30,
+    "firstItemConstructor": "SearchEntity",
+    "firstItemHasDataMethod": true
+  },
+  "ok": false,
+  "error": {
+    "name": "AssertionError",
+    "message": "A result must provide chainId and pairAddress"
+  },
+  "completedAt": "2026-10-02T05:59:14.027Z",
+  "explanation": "The initial example read chainId directly from an entity instead of calling .data(). This was corrected in the example, with no change to the generated SDK."
+}

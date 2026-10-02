@@ -1,0 +1,27 @@
+# BasicTokensPairFlow
+
+main: kit: flow: BasicTokensPairFlow:
+{
+  entity: "tokens_pair",
+  kind: "basic",
+  name: "BasicTokensPairFlow",
+  step: [
+    {
+      m: {
+        chain_id: "chain01",
+        token_address: "token_address01"
+      }
+
+      o: "list",
+      v: [
+        {
+          apply: "ItemExists",
+          def: {
+            ref: "tokens_pair_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicTokensPairFlow"
+}

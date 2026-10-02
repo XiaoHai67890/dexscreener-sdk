@@ -1,0 +1,22 @@
+# BasicTokenProfileFlow
+
+main: kit: flow: BasicTokenProfileFlow:
+{
+  entity: "token_profile",
+  kind: "basic",
+  name: "BasicTokenProfileFlow",
+  step: [
+    {
+      o: "list",
+      v: [
+        {
+          apply: "ItemExists",
+          def: {
+            ref: "token_profile_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicTokenProfileFlow"
+}

@@ -1,0 +1,89 @@
+# Entity: ads
+
+main: kit: entity: ads: {
+
+  alias: field: {}
+
+  fields: {
+    chainId: {
+      h: "Chain Id"
+      n: "chainId"
+      r: false
+      t: "`$STRING`"
+    }
+    date: {
+      fo: "date-time"
+      h: "Date"
+      n: "date"
+      r: false
+      t: "`$STRING`"
+    }
+    durationHours: {
+      h: "Duration Hours"
+      n: "durationHours"
+      r: false
+      t: "`$NUMBER`"
+    }
+    impressions: {
+      h: "Impressions"
+      n: "impressions"
+      r: false
+      t: "`$NUMBER`"
+    }
+    tokenAddress: {
+      h: "Token Address"
+      n: "tokenAddress"
+      r: false
+      t: "`$STRING`"
+    }
+    type: {
+      h: "Type"
+      n: "type"
+      r: false
+      t: "`$STRING`"
+    }
+    url: {
+      fo: "uri"
+      h: "Url"
+      n: "url"
+      r: false
+      t: "`$STRING`"
+    }
+  }
+
+  name: "ads"
+  op: {
+    list: {
+      name: "list"
+      points: [
+        {
+          co: {
+            id: "GET /ads/latest/v1"
+            source: "openapi3"
+            version: 2
+          }
+          m: "GET"
+          o: "/ads/latest/v1"
+          s: [
+            {
+              lit: "ads"
+            }
+            {
+              lit: "latest"
+            }
+            {
+              lit: "v1"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+      ]
+    }
+  }
+
+
+
+}

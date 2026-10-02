@@ -1,0 +1,80 @@
+# Generated from the API definition and overwritten on every build: do not
+# edit this file. Put customizations in the guide entry file, which includes
+# this one and overrides its defaults:
+#   guide.aontu
+
+guide: {
+  metrics: count: entity: 9
+  metrics: count: path: 10
+  metrics: count: method: 10
+
+  entity: ads: {
+    path: "/ads/latest/v1": {
+      op: list: method: *GET
+    }
+  }
+
+  entity: boost: {
+    path: "/token-boosts/latest/v1": {
+      op: list: method: *GET
+      op: list: transform: res: *("`body.links`")|top
+    }
+    path: "/token-boosts/top/v1": {
+      op: list: method: *GET
+      op: list: transform: res: *("`body.links`")|top
+    }
+  }
+
+  entity: community_takeover: {
+    path: "/community-takeovers/latest/v1": {
+      op: list: method: *GET
+    }
+  }
+
+  entity: order: {
+    path: "/orders/v1/{chainId}/{tokenAddress}": {
+      rename: param: "chainId": *"chain_id"
+      rename: param: "tokenAddress": *"token_address"
+      op: list: method: *GET
+    }
+  }
+
+  entity: pair: {
+    path: "/latest/dex/pairs/{chainId}/{pairId}": {
+      rename: param: "chainId": *"chain_id"
+      rename: param: "pairId": *"pair_id"
+      op: load: method: *GET
+    }
+  }
+
+  entity: search: {
+    path: "/latest/dex/search": {
+      op: list: method: *GET
+      op: list: transform: res: *("`body.pairs`")|top
+    }
+  }
+
+  entity: token: {
+    path: "/tokens/v1/{chainId}/{tokenAddresses}": {
+      rename: param: "chainId": *"chain_id"
+      rename: param: "tokenAddresses": *"token_address"
+      op: list: method: *GET
+    }
+  }
+
+  entity: token_profile: {
+    path: "/token-profiles/latest/v1": {
+      op: list: method: *GET
+      op: list: transform: res: *("`body.links`")|top
+    }
+  }
+
+  entity: tokens_pair: {
+    path: "/token-pairs/v1/{chainId}/{tokenAddress}": {
+      rename: param: "chainId": *"chain_id"
+      rename: param: "tokenAddress": *"token_address"
+      op: list: method: *GET
+    }
+  }
+
+}

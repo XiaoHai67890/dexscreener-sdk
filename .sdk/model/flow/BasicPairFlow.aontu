@@ -1,0 +1,33 @@
+# BasicPairFlow
+
+main: kit: flow: BasicPairFlow:
+{
+  entity: "pair",
+  kind: "basic",
+  name: "BasicPairFlow",
+  step: [
+    {
+      i: {
+        ref: "pair_ref01",
+        srcdatavar: "pair_ref01_data",
+        suffix: "_dt0"
+      }
+
+      m: {
+        chain_id: "chain01",
+        id: "pair01"
+      }
+
+      o: "load",
+      v: [
+        {
+          apply: "TextFieldMark",
+          def: {
+            mark: "Mark01-pair_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicPairFlow"
+}

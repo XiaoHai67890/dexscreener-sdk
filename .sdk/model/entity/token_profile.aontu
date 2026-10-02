@@ -1,0 +1,64 @@
+# Entity: token_profile
+
+main: kit: entity: token_profile: {
+
+  alias: field: {}
+
+  fields: {
+    label: {
+      h: "Label"
+      n: "label"
+      r: false
+      t: "`$STRING`"
+    }
+    type: {
+      h: "Type"
+      n: "type"
+      r: false
+      t: "`$STRING`"
+    }
+    url: {
+      fo: "uri"
+      h: "Url"
+      n: "url"
+      r: false
+      t: "`$STRING`"
+    }
+  }
+
+  name: "token_profile"
+  op: {
+    list: {
+      name: "list"
+      points: [
+        {
+          co: {
+            id: "GET /token-profiles/latest/v1"
+            source: "openapi3"
+            version: 2
+          }
+          m: "GET"
+          o: "/token-profiles/latest/v1"
+          s: [
+            {
+              lit: "token-profiles"
+            }
+            {
+              lit: "latest"
+            }
+            {
+              lit: "v1"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body.links`"
+          }
+        }
+      ]
+    }
+  }
+
+
+
+}

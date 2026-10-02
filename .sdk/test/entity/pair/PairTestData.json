@@ -1,0 +1,42 @@
+{
+  "existing": {
+    "pair": {
+      "PAIR00": {
+        "id": "PAIR00",
+        "pairs": [],
+        "schemaVersion": "s20",
+        "chain_id": "CHAIN01",
+        "pair_id": "PAIR01"
+      },
+      "PAIR01": {
+        "id": "PAIR01",
+        "pairs": [],
+        "schemaVersion": "s3e",
+        "chain_id": "CHAIN01",
+        "pair_id": "PAIR01"
+      },
+      "PAIR02": {
+        "id": "PAIR02",
+        "pairs": [],
+        "schemaVersion": "s5c",
+        "chain_id": "CHAIN01",
+        "pair_id": "PAIR01"
+      }
+    }
+  },
+  "new": {
+    "pair": {
+      "pair_ref01": {
+        "pairs": [],
+        "schemaVersion": "s7a"
+      }
+    }
+  },
+  "requests": {
+    "GET /latest/dex/pairs/{chainId}/{pairId}": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

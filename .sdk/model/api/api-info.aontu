@@ -1,0 +1,20 @@
+# API Information
+
+
+main: {
+  kit: {
+    info: {
+      auth: false
+      description: "The DEX Screener API."
+      servers: [
+        {
+          url: "https://api.dexscreener.com"
+        }
+      ]
+      title: "DEX Screener API"
+      version: "1.0.0"
+      website: "https://dexscreener.com"
+    }
+  }
+}
+

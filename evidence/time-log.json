@@ -1,0 +1,42 @@
+{
+  "timezone": "UTC",
+  "executionWindowStartedAt": "2026-10-02T05:54:18Z",
+  "localArtifactsPreparedAt": "2026-10-02T06:02:52.602Z",
+  "localExecutionElapsedMinutes": 8.6,
+  "preparation": "API selection and design were prepared before this execution window; this is not a measurement of total human effort.",
+  "humanEffortMinutes": null,
+  "humanEffortStatement": "Human reading, preparation and review time was not independently measured. No claim is made that the candidate manually wrote or personally ran the generated implementation.",
+  "aiAssistance": [
+    "scaffolding",
+    "model metadata",
+    "source inspection",
+    "live example",
+    "local build and offline tests",
+    "live verification",
+    "documentation",
+    "independent review"
+  ],
+  "scope": "This timestamp ends local artifact preparation; GitHub publication and email submission are subsequent steps.",
+  "checkpoints": [
+    {
+      "at": "2026-10-02T05:55:00Z",
+      "action": "scaffold started"
+    },
+    {
+      "at": "2026-10-02T05:55:26Z",
+      "action": "scaffold completed"
+    },
+    {
+      "at": "2026-10-02T05:55:48Z",
+      "action": "initial generation completed"
+    },
+    {
+      "at": "2026-10-02T05:59:13.655Z",
+      "action": "first live example began; return-shape assumption failed after HTTP 200"
+    },
+    {
+      "at": "2026-10-02T06:00:27.477Z",
+      "action": "final two-request live smoke completed successfully"
+    }
+  ]
+}

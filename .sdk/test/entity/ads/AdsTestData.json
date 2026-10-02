@@ -1,0 +1,53 @@
+{
+  "existing": {
+    "ads": {
+      "ADS00": {
+        "chainId": "s46",
+        "date": "s47",
+        "durationHours": 72,
+        "impressions": 73,
+        "tokenAddress": "s4a",
+        "type": "s4b",
+        "url": "s4c"
+      },
+      "ADS01": {
+        "chainId": "s8c",
+        "date": "s8d",
+        "durationHours": 142,
+        "impressions": 143,
+        "tokenAddress": "s90",
+        "type": "s91",
+        "url": "s92"
+      },
+      "ADS02": {
+        "chainId": "sd2",
+        "date": "sd3",
+        "durationHours": 212,
+        "impressions": 213,
+        "tokenAddress": "sd6",
+        "type": "sd7",
+        "url": "sd8"
+      }
+    }
+  },
+  "new": {
+    "ads": {
+      "ads_ref01": {
+        "chainId": "s118",
+        "date": "s119",
+        "durationHours": 282,
+        "impressions": 283,
+        "tokenAddress": "s11c",
+        "type": "s11d",
+        "url": "s11e"
+      }
+    }
+  },
+  "requests": {
+    "GET /ads/latest/v1": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

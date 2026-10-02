@@ -1,0 +1,98 @@
+# Entity: order
+
+main: kit: entity: order: {
+
+  alias: field: {}
+
+  fields: {
+    paymentTimestamp: {
+      h: "Payment Timestamp"
+      n: "paymentTimestamp"
+      r: false
+      t: "`$NUMBER`"
+    }
+    status: {
+      h: "Status"
+      n: "status"
+      r: false
+      t: "`$STRING`"
+    }
+    type: {
+      h: "Type"
+      n: "type"
+      r: false
+      t: "`$STRING`"
+    }
+  }
+
+  name: "order"
+  op: {
+    list: {
+      name: "list"
+      points: [
+        {
+          co: {
+            id: "GET /orders/v1/{chainId}/{tokenAddress}"
+            source: "openapi3"
+            version: 2
+          }
+          g: {
+            params: [
+              {
+                ex: "solana"
+                k: "param"
+                n: "chain_id"
+                or: "chainId"
+                r: true
+                t: "`$STRING`"
+              }
+              {
+                ex: "A55XjvzRU4KtR3Lrys8PpLZQvPojPqvnv5bJVHMYy3Jv"
+                k: "param"
+                n: "token_address"
+                or: "tokenAddress"
+                r: true
+                t: "`$STRING`"
+              }
+            ]
+          }
+          m: "GET"
+          o: "/orders/v1/{chainId}/{tokenAddress}"
+          q: {
+            exist: [
+              "chain_id"
+              "token_address"
+            ]
+          }
+          r: {
+            param: {
+              chainId: "chain_id"
+              tokenAddress: "token_address"
+            }
+          }
+          s: [
+            {
+              lit: "orders"
+            }
+            {
+              lit: "v1"
+            }
+            {
+              var: "chain_id"
+            }
+            {
+              var: "token_address"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+      ]
+    }
+  }
+
+
+
+}

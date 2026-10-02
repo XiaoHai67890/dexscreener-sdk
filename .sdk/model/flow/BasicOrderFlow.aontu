@@ -1,0 +1,27 @@
+# BasicOrderFlow
+
+main: kit: flow: BasicOrderFlow:
+{
+  entity: "order",
+  kind: "basic",
+  name: "BasicOrderFlow",
+  step: [
+    {
+      m: {
+        chain_id: "chain01",
+        token_address: "token_address01"
+      }
+
+      o: "list",
+      v: [
+        {
+          apply: "ItemExists",
+          def: {
+            ref: "order_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicOrderFlow"
+}

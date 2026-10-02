@@ -1,0 +1,27 @@
+# BasicTokenFlow
+
+main: kit: flow: BasicTokenFlow:
+{
+  entity: "token",
+  kind: "basic",
+  name: "BasicTokenFlow",
+  step: [
+    {
+      m: {
+        chain_id: "chain01",
+        token_address: "token_address01"
+      }
+
+      o: "list",
+      v: [
+        {
+          apply: "ItemExists",
+          def: {
+            ref: "token_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicTokenFlow"
+}

@@ -1,0 +1,103 @@
+{
+  "existing": {
+    "tokens_pair": {
+      "TOKENS_PAIR00": {
+        "baseToken": {},
+        "boosts": {},
+        "chainId": "sb6",
+        "dexId": "sb7",
+        "fdv": 184,
+        "info": {},
+        "labels": [],
+        "liquidity": {},
+        "marketCap": 188,
+        "pairAddress": "sbd",
+        "pairCreatedAt": 190,
+        "priceChange": {},
+        "priceNative": "sc0",
+        "priceUsd": "sc1",
+        "quoteToken": {},
+        "txns": {},
+        "url": "sc4",
+        "volume": {},
+        "chain_id": "CHAIN01",
+        "token_address": "TOKEN_ADDRESS01"
+      },
+      "TOKENS_PAIR01": {
+        "baseToken": {},
+        "boosts": {},
+        "chainId": "s16a",
+        "dexId": "s16b",
+        "fdv": 364,
+        "info": {},
+        "labels": [],
+        "liquidity": {},
+        "marketCap": 368,
+        "pairAddress": "s171",
+        "pairCreatedAt": 370,
+        "priceChange": {},
+        "priceNative": "s174",
+        "priceUsd": "s175",
+        "quoteToken": {},
+        "txns": {},
+        "url": "s178",
+        "volume": {},
+        "chain_id": "CHAIN01",
+        "token_address": "TOKEN_ADDRESS01"
+      },
+      "TOKENS_PAIR02": {
+        "baseToken": {},
+        "boosts": {},
+        "chainId": "s21e",
+        "dexId": "s21f",
+        "fdv": 544,
+        "info": {},
+        "labels": [],
+        "liquidity": {},
+        "marketCap": 548,
+        "pairAddress": "s225",
+        "pairCreatedAt": 550,
+        "priceChange": {},
+        "priceNative": "s228",
+        "priceUsd": "s229",
+        "quoteToken": {},
+        "txns": {},
+        "url": "s22c",
+        "volume": {},
+        "chain_id": "CHAIN01",
+        "token_address": "TOKEN_ADDRESS01"
+      }
+    }
+  },
+  "new": {
+    "tokens_pair": {
+      "tokens_pair_ref01": {
+        "baseToken": {},
+        "boosts": {},
+        "chainId": "s2d2",
+        "dexId": "s2d3",
+        "fdv": 724,
+        "info": {},
+        "labels": [],
+        "liquidity": {},
+        "marketCap": 728,
+        "pairAddress": "s2d9",
+        "pairCreatedAt": 730,
+        "priceChange": {},
+        "priceNative": "s2dc",
+        "priceUsd": "s2dd",
+        "quoteToken": {},
+        "txns": {},
+        "url": "s2e0",
+        "volume": {}
+      }
+    }
+  },
+  "requests": {
+    "GET /token-pairs/v1/{chainId}/{tokenAddress}": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

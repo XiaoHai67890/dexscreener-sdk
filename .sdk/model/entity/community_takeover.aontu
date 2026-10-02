@@ -1,0 +1,97 @@
+# Entity: community_takeover
+
+main: kit: entity: community_takeover: {
+
+  alias: field: {}
+
+  fields: {
+    chainId: {
+      h: "Chain Id"
+      n: "chainId"
+      r: false
+      t: "`$STRING`"
+    }
+    claimDate: {
+      fo: "date-time"
+      h: "Claim Date"
+      n: "claimDate"
+      r: false
+      t: "`$STRING`"
+    }
+    description: {
+      h: "Description"
+      n: "description"
+      r: false
+      t: "`$STRING`"
+    }
+    header: {
+      fo: "uri"
+      h: "Header"
+      n: "header"
+      r: false
+      t: "`$STRING`"
+    }
+    icon: {
+      fo: "uri"
+      h: "Icon"
+      n: "icon"
+      r: false
+      t: "`$STRING`"
+    }
+    links: {
+      h: "Links"
+      n: "links"
+      r: false
+      t: "`$ARRAY`"
+    }
+    tokenAddress: {
+      h: "Token Address"
+      n: "tokenAddress"
+      r: false
+      t: "`$STRING`"
+    }
+    url: {
+      fo: "uri"
+      h: "Url"
+      n: "url"
+      r: false
+      t: "`$STRING`"
+    }
+  }
+
+  name: "community_takeover"
+  op: {
+    list: {
+      name: "list"
+      points: [
+        {
+          co: {
+            id: "GET /community-takeovers/latest/v1"
+            source: "openapi3"
+            version: 2
+          }
+          m: "GET"
+          o: "/community-takeovers/latest/v1"
+          s: [
+            {
+              lit: "community-takeovers"
+            }
+            {
+              lit: "latest"
+            }
+            {
+              lit: "v1"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+      ]
+    }
+  }
+
+
+
+}

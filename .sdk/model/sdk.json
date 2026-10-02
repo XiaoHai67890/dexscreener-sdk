@@ -1,0 +1,1848 @@
+{
+  "NAME": "DEXSCREENER",
+  "Name": "Dexscreener",
+  "def": "dexscreener-openapi-original.yml",
+  "main": {
+    "api": {
+      "entity": {},
+      "guide": {}
+    },
+    "custom": {
+      "plurals": {}
+    },
+    "def": {
+      "desc": ""
+    },
+    "kit": {
+      "author": {
+        "name": "Xiaohai",
+        "url": "https://github.com/XiaoHai67890"
+      },
+      "config": {
+        "docs_order": [
+          "ts",
+          "py",
+          "php",
+          "go",
+          "rb",
+          "lua"
+        ],
+        "headers": {
+          "content-type": "application/json"
+        },
+        "repr": "auto"
+      },
+      "contributor": {},
+      "doc": {
+        "active": true,
+        "assets": {
+          "path": ".sdk/doc/assets"
+        },
+        "brand": {
+          "label": "",
+          "notice": "",
+          "shortNotice": "",
+          "url": ""
+        },
+        "ci": {
+          "active": true,
+          "branch": "main"
+        },
+        "content": {
+          "path": ".sdk/doc/content"
+        },
+        "edition": {
+          "github-pages": {
+            "active": false,
+            "base": "node_modules/@voxgig/docgen/project/.sdk",
+            "brand": {},
+            "filter": {
+              "entities": [],
+              "features": [],
+              "targets": []
+            },
+            "kind": "github-pages",
+            "name": "github-pages",
+            "origname": "",
+            "output": {
+              "path": "docs"
+            },
+            "package": "@voxgig/docgen",
+            "published": false,
+            "site": {
+              "active": true
+            },
+            "style": {},
+            "title": ""
+          },
+          "summary": {
+            "active": true,
+            "base": "node_modules/@voxgig/docgen/project/.sdk",
+            "brand": {},
+            "filter": {
+              "entities": [],
+              "features": [],
+              "targets": []
+            },
+            "kind": "summary",
+            "name": "summary",
+            "origname": "",
+            "output": {
+              "path": "SUMMARY.md"
+            },
+            "package": "@voxgig/docgen",
+            "published": false,
+            "site": {
+              "active": true
+            },
+            "style": {},
+            "title": ""
+          }
+        },
+        "qa": {
+          "vocabulary": []
+        },
+        "style": {
+          "color": {
+            "accent": "#00c6d8",
+            "background": "#f5f5f9",
+            "darkBackground": "#0f1117",
+            "darkText": "#e6edf3",
+            "primary": "#e70042",
+            "text": "#0a0a0a"
+          },
+          "font": "Nunito, system-ui, sans-serif",
+          "fontFile": "",
+          "headingFont": "Nunito, system-ui, sans-serif",
+          "headingFontFile": "",
+          "logo": "",
+          "mode": "light",
+          "mono": "ui-monospace, monospace",
+          "monoFile": ""
+        },
+        "target": {}
+      },
+      "entity": {
+        "ads": {
+          "active": true,
+          "alias": {
+            "field": {}
+          },
+          "fields": {
+            "chainId": {
+              "a": true,
+              "h": "Chain Id",
+              "n": "chainId",
+              "r": false,
+              "t": "`$STRING`"
+            },
+            "date": {
+              "a": true,
+              "fo": "date-time",
+              "h": "Date",
+              "n": "date",
+              "r": false,
+              "t": "`$STRING`"
+            },
+            "durationHours": {
+              "a": true,
+              "h": "Duration Hours",
+              "n": "durationHours",
+              "r": false,
+              "t": "`$NUMBER`"
+            },
+            "impressions": {
+              "a": true,
+              "h": "Impressions",
+              "n": "impressions",
+              "r": false,
+              "t": "`$NUMBER`"
+            },
+            "tokenAddress": {
+              "a": true,
+              "h": "Token Address",
+              "n": "tokenAddress",
+              "r": false,
+              "t": "`$STRING`"
+            },
+            "type": {
+              "a": true,
+              "h": "Type",
+              "n": "type",
+              "r": false,
+              "t": "`$STRING`"
+            },
+            "url": {
+              "a": true,
+              "fo": "uri",
+              "h": "Url",
+              "n": "url",
+              "r": false,
+              "t": "`$STRING`"
+            }
+          },
+          "name": "ads",
+          "op": {
+            "list": {
+              "input": "data",
+              "name": "list",
+              "points": [
+                {
+                  "a": true,
+                  "co": {
+                    "id": "GET /ads/latest/v1",
+                    "source": "openapi3",
+                    "version": 2
+                  },
+                  "g": {},
+                  "k": "http",
+                  "m": "GET",
+                  "o": "/ads/latest/v1",
+                  "q": {},
+                  "r": {},
+                  "s": [
+                    {
+                      "lit": "ads"
+                    },
+                    {
+                      "lit": "latest"
+                    },
+                    {
+                      "lit": "v1"
+                    }
+                  ],
+                  "t": {
+                    "req": "`reqdata`",
+                    "res": "`body`"
+                  }
+                }
+              ]
+            }
+          },
+          "relations": {
+            "ancestors": []
+          }
+        },
+        "boost": {
+          "active": true,
+          "alias": {
+            "field": {}
+          },
+          "fields": {
+            "label": {
+              "a": true,
+              "h": "Label",
+              "n": "label",
+              "r": false,
+              "t": "`$STRING`"
+            },
+            "type": {
+              "a": true,
+              "h": "Type",
+              "n": "type",
+              "r": false,
+              "t": "`$STRING`"
+            },
+            "url": {
+              "a": true,
+              "fo": "uri",
+              "h": "Url",
+              "n": "url",
+              "r": false,
+              "t": "`$STRING`"
+            }
+          },
+          "name": "boost",
+          "op": {
+            "list": {
+              "input": "data",
+              "name": "list",
+              "points": [
+                {
+                  "a": true,
+                  "co": {
+                    "id": "GET /token-boosts/latest/v1",
+                    "source": "openapi3",
+                    "version": 2
+                  },
+                  "g": {},
+                  "k": "http",
+                  "m": "GET",
+                  "o": "/token-boosts/latest/v1",
+                  "q": {},
+                  "r": {},
+                  "s": [
+                    {
+                      "lit": "token-boosts"
+                    },
+                    {
+                      "lit": "latest"
+                    },
+                    {
+                      "lit": "v1"
+                    }
+                  ],
+                  "t": {
+                    "req": "`reqdata`",
+                    "res": "`body.links`"
+                  }
+                },
+                {
+                  "a": true,
+                  "co": {
+                    "id": "GET /token-boosts/top/v1",
+                    "source": "openapi3",
+                    "version": 2
+                  },
+                  "g": {},
+                  "k": "http",
+                  "m": "GET",
+                  "o": "/token-boosts/top/v1",
+                  "q": {},
+                  "r": {},
+                  "s": [
+                    {
+                      "lit": "token-boosts"
+                    },
+                    {
+                      "lit": "top"
+                    },
+                    {
+                      "lit": "v1"
+                    }
+                  ],
+                  "t": {
+                    "req": "`reqdata`",
+                    "res": "`body.links`"
+                  }
+                }
+              ]
+            }
+          },
+          "relations": {
+            "ancestors": []
+          }
+        },
+        "community_takeover": {
+          "active": true,
+          "alias": {
+            "field": {}
+          },
+          "fields": {
+            "chainId": {
+              "a": true,
+              "h": "Chain Id",
+              "n": "chainId",
+              "r": false,
+              "t": "`$STRING`"
+            },
+            "claimDate": {
+              "a": true,
+              "fo": "date-time",
+              "h": "Claim Date",
+              "n": "claimDate",
+              "r": false,
+              "t": "`$STRING`"
+            },
+            "description": {
+              "a": true,
+              "h": "Description",
+              "n": "description",
+              "r": false,
+              "t": "`$STRING`"
+            },
+            "header": {
+              "a": true,
+              "fo": "uri",
+              "h": "Header",
+              "n": "header",
+              "r": false,
+              "t": "`$STRING`"
+            },
+            "icon": {
+              "a": true,
+              "fo": "uri",
+              "h": "Icon",
+              "n": "icon",
+              "r": false,
+              "t": "`$STRING`"
+            },
+            "links": {
+              "a": true,
+              "h": "Links",
+              "n": "links",
+              "r": false,
+              "t": "`$ARRAY`"
+            },
+            "tokenAddress": {
+              "a": true,
+              "h": "Token Address",
+              "n": "tokenAddress",
+              "r": false,
+              "t": "`$STRING`"
+            },
+            "url": {
+              "a": true,
+              "fo": "uri",
+              "h": "Url",
+              "n": "url",
+              "r": false,
+              "t": "`$STRING`"
+            }
+          },
+          "name": "community_takeover",
+          "op": {
+            "list": {
+              "input": "data",
+              "name": "list",
+              "points": [
+                {
+                  "a": true,
+                  "co": {
+                    "id": "GET /community-takeovers/latest/v1",
+                    "source": "openapi3",
+                    "version": 2
+                  },
+                  "g": {},
+                  "k": "http",
+                  "m": "GET",
+                  "o": "/community-takeovers/latest/v1",
+                  "q": {},
+                  "r": {},
+                  "s": [
+                    {
+                      "lit": "community-takeovers"
+                    },
+                    {
+                      "lit": "latest"
+                    },
+                    {
+                      "lit": "v1"
+                    }
+                  ],
+                  "t": {
+                    "req": "`reqdata`",
+                    "res": "`body`"
+                  }
+                }
+              ]
+            }
+          },
+          "relations": {
+            "ancestors": []
+          }
+        },
+        "order": {
+          "active": true,
+          "alias": {
+            "field": {}
+          },
+          "fields": {
+            "paymentTimestamp": {
+              "a": true,
+              "h": "Payment Timestamp",
+              "n": "paymentTimestamp",
+              "r": false,
+              "t": "`$NUMBER`"
+            },
+            "status": {
+              "a": true,
+              "h": "Status",
+              "n": "status",
+              "r": false,
+              "t": "`$STRING`"
+            },
+            "type": {
+              "a": true,
+              "h": "Type",
+              "n": "type",
+              "r": false,
+              "t": "`$STRING`"
+            }
+          },
+          "name": "order",
+          "op": {
+            "list": {
+              "input": "data",
+              "name": "list",
+              "points": [
+                {
+                  "a": true,
+                  "co": {
+                    "id": "GET /orders/v1/{chainId}/{tokenAddress}",
+                    "source": "openapi3",
+                    "version": 2
+                  },
+                  "g": {
+                    "params": [
+                      {
+                        "a": true,
+                        "ex": "solana",
+                        "k": "param",
+                        "n": "chain_id",
+                        "or": "chainId",
+                        "r": true,
+                        "t": "`$STRING`"
+                      },
+                      {
+                        "a": true,
+                        "ex": "A55XjvzRU4KtR3Lrys8PpLZQvPojPqvnv5bJVHMYy3Jv",
+                        "k": "param",
+                        "n": "token_address",
+                        "or": "tokenAddress",
+                        "r": true,
+                        "t": "`$STRING`"
+                      }
+                    ]
+                  },
+                  "k": "http",
+                  "m": "GET",
+                  "o": "/orders/v1/{chainId}/{tokenAddress}",
+                  "q": {
+                    "exist": [
+                      "chain_id",
+                      "token_address"
+                    ]
+                  },
+                  "r": {
+                    "param": {
+                      "chainId": "chain_id",
+                      "tokenAddress": "token_address"
+                    }
+                  },
+                  "s": [
+                    {
+                      "lit": "orders"
+                    },
+                    {
+                      "lit": "v1"
+                    },
+                    {
+                      "var": "chain_id"
+                    },
+                    {
+                      "var": "token_address"
+                    }
+                  ],
+                  "t": {
+                    "req": "`reqdata`",
+                    "res": "`body`"
+                  }
+                }
+              ]
+            }
+          },
+          "relations": {
+            "ancestors": []
+          }
+        },
+        "pair": {
+          "active": true,
+          "alias": {
+            "field": {}
+          },
+          "fields": {
+            "id": {
+              "a": true,
+              "h": "Id",
+              "n": "id",
+              "r": false,
+              "t": "`$STRING`"
+            },
+            "pairs": {
+              "a": true,
+              "h": "Pairs",
+              "n": "pairs",
+              "r": false,
+              "t": "`$ARRAY`"
+            },
+            "schemaVersion": {
+              "a": true,
+              "h": "Schema Version",
+              "n": "schemaVersion",
+              "r": false,
+              "t": "`$STRING`"
+            }
+          },
+          "id": {
+            "field": "id",
+            "name": "id",
+            "parts": [
+              "chain_id",
+              "pair_id"
+            ],
+            "sep": "/"
+          },
+          "name": "pair",
+          "op": {
+            "load": {
+              "input": "data",
+              "name": "load",
+              "points": [
+                {
+                  "a": true,
+                  "co": {
+                    "id": "GET /latest/dex/pairs/{chainId}/{pairId}",
+                    "source": "openapi3",
+                    "version": 2
+                  },
+                  "g": {
+                    "params": [
+                      {
+                        "a": true,
+                        "ex": "solana",
+                        "k": "param",
+                        "n": "chain_id",
+                        "or": "chainId",
+                        "r": true,
+                        "t": "`$STRING`"
+                      },
+                      {
+                        "a": true,
+                        "ex": "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
+                        "k": "param",
+                        "n": "pair_id",
+                        "or": "pairId",
+                        "r": true,
+                        "t": "`$STRING`"
+                      }
+                    ]
+                  },
+                  "k": "http",
+                  "m": "GET",
+                  "o": "/latest/dex/pairs/{chainId}/{pairId}",
+                  "q": {
+                    "exist": [
+                      "chain_id",
+                      "pair_id"
+                    ]
+                  },
+                  "r": {
+                    "param": {
+                      "chainId": "chain_id",
+                      "pairId": "pair_id"
+                    }
+                  },
+                  "s": [
+                    {
+                      "lit": "latest"
+                    },
+                    {
+                      "lit": "dex"
+                    },
+                    {
+                      "lit": "pairs"
+                    },
+                    {
+                      "var": "chain_id"
+                    },
+                    {
+                      "var": "pair_id"
+                    }
+                  ],
+                  "t": {
+                    "req": "`reqdata`",
+                    "res": "`body`"
+                  }
+                }
+              ]
+            }
+          },
+          "relations": {
+            "ancestors": []
+          }
+        },
+        "search": {
+          "active": true,
+          "alias": {
+            "field": {}
+          },
+          "fields": {
+            "baseToken": {
+              "a": true,
+              "h": "Base Token",
+              "n": "baseToken",
+              "r": false,
+              "t": "`$OBJECT`"
+            },
+            "boosts": {
+              "a": true,
+              "h": "Boosts",
+              "n": "boosts",
+              "r": false,
+              "t": "`$OBJECT`"
+            },
+            "chainId": {
+              "a": true,
+              "h": "Chain Id",
+              "n": "chainId",
+              "r": false,
+              "t": "`$STRING`"
+            },
+            "dexId": {
+              "a": true,
+              "h": "Dex Id",
+              "n": "dexId",
+              "r": false,
+              "t": "`$STRING`"
+            },
+            "fdv": {
+              "a": true,
+              "h": "Fdv",
+              "n": "fdv",
+              "r": false,
+              "t": "`$NUMBER`"
+            },
+            "info": {
+              "a": true,
+              "h": "Info",
+              "n": "info",
+              "r": false,
+              "t": "`$OBJECT`"
+            },
+            "labels": {
+              "a": true,
+              "h": "Labels",
+              "n": "labels",
+              "r": false,
+              "t": "`$ARRAY`"
+            },
+            "liquidity": {
+              "a": true,
+              "h": "Liquidity",
+              "n": "liquidity",
+              "r": false,
+              "t": "`$OBJECT`"
+            },
+            "marketCap": {
+              "a": true,
+              "h": "Market Cap",
+              "n": "marketCap",
+              "r": false,
+              "t": "`$NUMBER`"
+            },
+            "pairAddress": {
+              "a": true,
+              "h": "Pair Address",
+              "n": "pairAddress",
+              "r": false,
+              "t": "`$STRING`"
+            },
+            "pairCreatedAt": {
+              "a": true,
+              "h": "Pair Created At",
+              "n": "pairCreatedAt",
+              "r": false,
+              "t": "`$INTEGER`"
+            },
+            "priceChange": {
+              "a": true,
+              "h": "Price Change",
+              "n": "priceChange",
+              "r": false,
+              "t": "`$OBJECT`"
+            },
+            "priceNative": {
+              "a": true,
+              "h": "Price Native",
+              "n": "priceNative",
+              "r": false,
+              "t": "`$STRING`"
+            },
+            "priceUsd": {
+              "a": true,
+              "h": "Price Usd",
+              "n": "priceUsd",
+              "r": false,
+              "t": "`$STRING`"
+            },
+            "quoteToken": {
+              "a": true,
+              "h": "Quote Token",
+              "n": "quoteToken",
+              "r": false,
+              "t": "`$OBJECT`"
+            },
+            "txns": {
+              "a": true,
+              "h": "Txns",
+              "n": "txns",
+              "r": false,
+              "t": "`$OBJECT`"
+            },
+            "url": {
+              "a": true,
+              "fo": "uri",
+              "h": "Url",
+              "n": "url",
+              "r": false,
+              "t": "`$STRING`"
+            },
+            "volume": {
+              "a": true,
+              "h": "Volume",
+              "n": "volume",
+              "r": false,
+              "t": "`$OBJECT`"
+            }
+          },
+          "name": "search",
+          "op": {
+            "list": {
+              "input": "data",
+              "name": "list",
+              "points": [
+                {
+                  "a": true,
+                  "co": {
+                    "id": "GET /latest/dex/search",
+                    "source": "openapi3",
+                    "version": 2
+                  },
+                  "g": {
+                    "query": [
+                      {
+                        "a": true,
+                        "ex": "SOL/USDC",
+                        "k": "query",
+                        "n": "q",
+                        "or": "q",
+                        "r": true,
+                        "t": "`$STRING`"
+                      }
+                    ]
+                  },
+                  "k": "http",
+                  "m": "GET",
+                  "o": "/latest/dex/search",
+                  "q": {
+                    "exist": [
+                      "q"
+                    ]
+                  },
+                  "r": {},
+                  "s": [
+                    {
+                      "lit": "latest"
+                    },
+                    {
+                      "lit": "dex"
+                    },
+                    {
+                      "lit": "search"
+                    }
+                  ],
+                  "t": {
+                    "req": "`reqdata`",
+                    "res": "`body.pairs`"
+                  }
+                }
+              ]
+            }
+          },
+          "relations": {
+            "ancestors": []
+          }
+        },
+        "token": {
+          "active": true,
+          "alias": {
+            "field": {}
+          },
+          "fields": {
+            "baseToken": {
+              "a": true,
+              "h": "Base Token",
+              "n": "baseToken",
+              "r": false,
+              "t": "`$OBJECT`"
+            },
+            "boosts": {
+              "a": true,
+              "h": "Boosts",
+              "n": "boosts",
+              "r": false,
+              "t": "`$OBJECT`"
+            },
+            "chainId": {
+              "a": true,
+              "h": "Chain Id",
+              "n": "chainId",
+              "r": false,
+              "t": "`$STRING`"
+            },
+            "dexId": {
+              "a": true,
+              "h": "Dex Id",
+              "n": "dexId",
+              "r": false,
+              "t": "`$STRING`"
+            },
+            "fdv": {
+              "a": true,
+              "h": "Fdv",
+              "n": "fdv",
+              "r": false,
+              "t": "`$NUMBER`"
+            },
+            "info": {
+              "a": true,
+              "h": "Info",
+              "n": "info",
+              "r": false,
+              "t": "`$OBJECT`"
+            },
+            "labels": {
+              "a": true,
+              "h": "Labels",
+              "n": "labels",
+              "r": false,
+              "t": "`$ARRAY`"
+            },
+            "liquidity": {
+              "a": true,
+              "h": "Liquidity",
+              "n": "liquidity",
+              "r": false,
+              "t": "`$OBJECT`"
+            },
+            "marketCap": {
+              "a": true,
+              "h": "Market Cap",
+              "n": "marketCap",
+              "r": false,
+              "t": "`$NUMBER`"
+            },
+            "pairAddress": {
+              "a": true,
+              "h": "Pair Address",
+              "n": "pairAddress",
+              "r": false,
+              "t": "`$STRING`"
+            },
+            "pairCreatedAt": {
+              "a": true,
+              "h": "Pair Created At",
+              "n": "pairCreatedAt",
+              "r": false,
+              "t": "`$INTEGER`"
+            },
+            "priceChange": {
+              "a": true,
+              "h": "Price Change",
+              "n": "priceChange",
+              "r": false,
+              "t": "`$OBJECT`"
+            },
+            "priceNative": {
+              "a": true,
+              "h": "Price Native",
+              "n": "priceNative",
+              "r": false,
+              "t": "`$STRING`"
+            },
+            "priceUsd": {
+              "a": true,
+              "h": "Price Usd",
+              "n": "priceUsd",
+              "r": false,
+              "t": "`$STRING`"
+            },
+            "quoteToken": {
+              "a": true,
+              "h": "Quote Token",
+              "n": "quoteToken",
+              "r": false,
+              "t": "`$OBJECT`"
+            },
+            "txns": {
+              "a": true,
+              "h": "Txns",
+              "n": "txns",
+              "r": false,
+              "t": "`$OBJECT`"
+            },
+            "url": {
+              "a": true,
+              "fo": "uri",
+              "h": "Url",
+              "n": "url",
+              "r": false,
+              "t": "`$STRING`"
+            },
+            "volume": {
+              "a": true,
+              "h": "Volume",
+              "n": "volume",
+              "r": false,
+              "t": "`$OBJECT`"
+            }
+          },
+          "name": "token",
+          "op": {
+            "list": {
+              "input": "data",
+              "name": "list",
+              "points": [
+                {
+                  "a": true,
+                  "co": {
+                    "id": "GET /tokens/v1/{chainId}/{tokenAddresses}",
+                    "source": "openapi3",
+                    "version": 2
+                  },
+                  "g": {
+                    "params": [
+                      {
+                        "a": true,
+                        "ex": "solana",
+                        "k": "param",
+                        "n": "chain_id",
+                        "or": "chainId",
+                        "r": true,
+                        "t": "`$STRING`"
+                      },
+                      {
+                        "a": true,
+                        "ex": "So11111111111111111111111111111111111111112,EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                        "k": "param",
+                        "n": "token_address",
+                        "or": "tokenAddresses",
+                        "r": true,
+                        "t": "`$STRING`"
+                      }
+                    ]
+                  },
+                  "k": "http",
+                  "m": "GET",
+                  "o": "/tokens/v1/{chainId}/{tokenAddresses}",
+                  "q": {
+                    "exist": [
+                      "chain_id",
+                      "token_address"
+                    ]
+                  },
+                  "r": {
+                    "param": {
+                      "chainId": "chain_id",
+                      "tokenAddresses": "token_address"
+                    }
+                  },
+                  "s": [
+                    {
+                      "lit": "tokens"
+                    },
+                    {
+                      "lit": "v1"
+                    },
+                    {
+                      "var": "chain_id"
+                    },
+                    {
+                      "var": "token_address"
+                    }
+                  ],
+                  "t": {
+                    "req": "`reqdata`",
+                    "res": "`body`"
+                  }
+                }
+              ]
+            }
+          },
+          "relations": {
+            "ancestors": []
+          }
+        },
+        "token_profile": {
+          "active": true,
+          "alias": {
+            "field": {}
+          },
+          "fields": {
+            "label": {
+              "a": true,
+              "h": "Label",
+              "n": "label",
+              "r": false,
+              "t": "`$STRING`"
+            },
+            "type": {
+              "a": true,
+              "h": "Type",
+              "n": "type",
+              "r": false,
+              "t": "`$STRING`"
+            },
+            "url": {
+              "a": true,
+              "fo": "uri",
+              "h": "Url",
+              "n": "url",
+              "r": false,
+              "t": "`$STRING`"
+            }
+          },
+          "name": "token_profile",
+          "op": {
+            "list": {
+              "input": "data",
+              "name": "list",
+              "points": [
+                {
+                  "a": true,
+                  "co": {
+                    "id": "GET /token-profiles/latest/v1",
+                    "source": "openapi3",
+                    "version": 2
+                  },
+                  "g": {},
+                  "k": "http",
+                  "m": "GET",
+                  "o": "/token-profiles/latest/v1",
+                  "q": {},
+                  "r": {},
+                  "s": [
+                    {
+                      "lit": "token-profiles"
+                    },
+                    {
+                      "lit": "latest"
+                    },
+                    {
+                      "lit": "v1"
+                    }
+                  ],
+                  "t": {
+                    "req": "`reqdata`",
+                    "res": "`body.links`"
+                  }
+                }
+              ]
+            }
+          },
+          "relations": {
+            "ancestors": []
+          }
+        },
+        "tokens_pair": {
+          "active": true,
+          "alias": {
+            "field": {}
+          },
+          "fields": {
+            "baseToken": {
+              "a": true,
+              "h": "Base Token",
+              "n": "baseToken",
+              "r": false,
+              "t": "`$OBJECT`"
+            },
+            "boosts": {
+              "a": true,
+              "h": "Boosts",
+              "n": "boosts",
+              "r": false,
+              "t": "`$OBJECT`"
+            },
+            "chainId": {
+              "a": true,
+              "h": "Chain Id",
+              "n": "chainId",
+              "r": false,
+              "t": "`$STRING`"
+            },
+            "dexId": {
+              "a": true,
+              "h": "Dex Id",
+              "n": "dexId",
+              "r": false,
+              "t": "`$STRING`"
+            },
+            "fdv": {
+              "a": true,
+              "h": "Fdv",
+              "n": "fdv",
+              "r": false,
+              "t": "`$NUMBER`"
+            },
+            "info": {
+              "a": true,
+              "h": "Info",
+              "n": "info",
+              "r": false,
+              "t": "`$OBJECT`"
+            },
+            "labels": {
+              "a": true,
+              "h": "Labels",
+              "n": "labels",
+              "r": false,
+              "t": "`$ARRAY`"
+            },
+            "liquidity": {
+              "a": true,
+              "h": "Liquidity",
+              "n": "liquidity",
+              "r": false,
+              "t": "`$OBJECT`"
+            },
+            "marketCap": {
+              "a": true,
+              "h": "Market Cap",
+              "n": "marketCap",
+              "r": false,
+              "t": "`$NUMBER`"
+            },
+            "pairAddress": {
+              "a": true,
+              "h": "Pair Address",
+              "n": "pairAddress",
+              "r": false,
+              "t": "`$STRING`"
+            },
+            "pairCreatedAt": {
+              "a": true,
+              "h": "Pair Created At",
+              "n": "pairCreatedAt",
+              "r": false,
+              "t": "`$INTEGER`"
+            },
+            "priceChange": {
+              "a": true,
+              "h": "Price Change",
+              "n": "priceChange",
+              "r": false,
+              "t": "`$OBJECT`"
+            },
+            "priceNative": {
+              "a": true,
+              "h": "Price Native",
+              "n": "priceNative",
+              "r": false,
+              "t": "`$STRING`"
+            },
+            "priceUsd": {
+              "a": true,
+              "h": "Price Usd",
+              "n": "priceUsd",
+              "r": false,
+              "t": "`$STRING`"
+            },
+            "quoteToken": {
+              "a": true,
+              "h": "Quote Token",
+              "n": "quoteToken",
+              "r": false,
+              "t": "`$OBJECT`"
+            },
+            "txns": {
+              "a": true,
+              "h": "Txns",
+              "n": "txns",
+              "r": false,
+              "t": "`$OBJECT`"
+            },
+            "url": {
+              "a": true,
+              "fo": "uri",
+              "h": "Url",
+              "n": "url",
+              "r": false,
+              "t": "`$STRING`"
+            },
+            "volume": {
+              "a": true,
+              "h": "Volume",
+              "n": "volume",
+              "r": false,
+              "t": "`$OBJECT`"
+            }
+          },
+          "name": "tokens_pair",
+          "op": {
+            "list": {
+              "input": "data",
+              "name": "list",
+              "points": [
+                {
+                  "a": true,
+                  "co": {
+                    "id": "GET /token-pairs/v1/{chainId}/{tokenAddress}",
+                    "source": "openapi3",
+                    "version": 2
+                  },
+                  "g": {
+                    "params": [
+                      {
+                        "a": true,
+                        "ex": "solana",
+                        "k": "param",
+                        "n": "chain_id",
+                        "or": "chainId",
+                        "r": true,
+                        "t": "`$STRING`"
+                      },
+                      {
+                        "a": true,
+                        "ex": "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
+                        "k": "param",
+                        "n": "token_address",
+                        "or": "tokenAddress",
+                        "r": true,
+                        "t": "`$STRING`"
+                      }
+                    ]
+                  },
+                  "k": "http",
+                  "m": "GET",
+                  "o": "/token-pairs/v1/{chainId}/{tokenAddress}",
+                  "q": {
+                    "exist": [
+                      "chain_id",
+                      "token_address"
+                    ]
+                  },
+                  "r": {
+                    "param": {
+                      "chainId": "chain_id",
+                      "tokenAddress": "token_address"
+                    }
+                  },
+                  "s": [
+                    {
+                      "lit": "token-pairs"
+                    },
+                    {
+                      "lit": "v1"
+                    },
+                    {
+                      "var": "chain_id"
+                    },
+                    {
+                      "var": "token_address"
+                    }
+                  ],
+                  "t": {
+                    "req": "`reqdata`",
+                    "res": "`body`"
+                  }
+                }
+              ]
+            }
+          },
+          "relations": {
+            "ancestors": []
+          }
+        }
+      },
+      "feature": {
+        "test": {
+          "active": true,
+          "base": "node_modules/@voxgig/sdkgen/project/.sdk",
+          "config": {
+            "options": {
+              "active": false
+            },
+            "optspec": {
+              "entity": "`$MAP`",
+              "net": "`$MAP`"
+            },
+            "strict": false
+          },
+          "description": "In-memory mock transport for testing without a live server",
+          "hook": {
+            "GetData": {
+              "active": true,
+              "await": false
+            },
+            "GetMatch": {
+              "active": true,
+              "await": false
+            },
+            "PostConstruct": {
+              "active": true,
+              "await": false
+            },
+            "PostConstructEntity": {
+              "active": true,
+              "await": false
+            },
+            "PostOperation": {
+              "active": false,
+              "await": false
+            },
+            "PrePoint": {
+              "active": true,
+              "await": false
+            },
+            "PreRequest": {
+              "active": true,
+              "await": false
+            },
+            "PreResponse": {
+              "active": true,
+              "await": false
+            },
+            "PreResult": {
+              "active": true,
+              "await": false
+            },
+            "PreSpec": {
+              "active": true,
+              "await": false
+            },
+            "PreTarget": {
+              "active": false,
+              "await": false
+            },
+            "SetData": {
+              "active": true,
+              "await": false
+            },
+            "SetMatch": {
+              "active": true,
+              "await": false
+            }
+          },
+          "name": "test",
+          "needs": {},
+          "origname": "",
+          "package": "@voxgig/sdkgen",
+          "plugin": {},
+          "spec": {},
+          "target": {
+            "ts": {
+              "deps": {}
+            }
+          },
+          "title": "Test transport",
+          "transport": "base",
+          "version": "0.0.1"
+        }
+      },
+      "flow": {
+        "BasicAdsFlow": {
+          "active": true,
+          "entity": "ads",
+          "key$": "BasicAdsFlow",
+          "kind": "basic",
+          "name": "BasicAdsFlow",
+          "param": {},
+          "step": [
+            {
+              "a": true,
+              "d": {},
+              "i": {},
+              "m": {},
+              "o": "list",
+              "s": [],
+              "v": [
+                {
+                  "apply": "ItemExists",
+                  "def": {
+                    "ref": "ads_ref01"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "BasicBoostFlow": {
+          "active": true,
+          "entity": "boost",
+          "key$": "BasicBoostFlow",
+          "kind": "basic",
+          "name": "BasicBoostFlow",
+          "param": {},
+          "step": [
+            {
+              "a": true,
+              "d": {},
+              "i": {},
+              "m": {},
+              "o": "list",
+              "s": [],
+              "v": [
+                {
+                  "apply": "ItemExists",
+                  "def": {
+                    "ref": "boost_ref01"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "BasicCommunityTakeoverFlow": {
+          "active": true,
+          "entity": "community_takeover",
+          "key$": "BasicCommunityTakeoverFlow",
+          "kind": "basic",
+          "name": "BasicCommunityTakeoverFlow",
+          "param": {},
+          "step": [
+            {
+              "a": true,
+              "d": {},
+              "i": {},
+              "m": {},
+              "o": "list",
+              "s": [],
+              "v": [
+                {
+                  "apply": "ItemExists",
+                  "def": {
+                    "ref": "community_takeover_ref01"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "BasicOrderFlow": {
+          "active": true,
+          "entity": "order",
+          "key$": "BasicOrderFlow",
+          "kind": "basic",
+          "name": "BasicOrderFlow",
+          "param": {},
+          "step": [
+            {
+              "a": true,
+              "d": {},
+              "i": {},
+              "m": {
+                "chain_id": "chain01",
+                "token_address": "token_address01"
+              },
+              "o": "list",
+              "s": [],
+              "v": [
+                {
+                  "apply": "ItemExists",
+                  "def": {
+                    "ref": "order_ref01"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "BasicPairFlow": {
+          "active": true,
+          "entity": "pair",
+          "key$": "BasicPairFlow",
+          "kind": "basic",
+          "name": "BasicPairFlow",
+          "param": {},
+          "step": [
+            {
+              "a": true,
+              "d": {},
+              "i": {
+                "ref": "pair_ref01",
+                "srcdatavar": "pair_ref01_data",
+                "suffix": "_dt0"
+              },
+              "m": {
+                "chain_id": "chain01",
+                "id": "pair01"
+              },
+              "o": "load",
+              "s": [],
+              "v": [
+                {
+                  "apply": "TextFieldMark",
+                  "def": {
+                    "mark": "Mark01-pair_ref01"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "BasicSearchFlow": {
+          "active": true,
+          "entity": "search",
+          "key$": "BasicSearchFlow",
+          "kind": "basic",
+          "name": "BasicSearchFlow",
+          "param": {},
+          "step": [
+            {
+              "a": true,
+              "d": {},
+              "i": {},
+              "m": {},
+              "o": "list",
+              "s": [],
+              "v": [
+                {
+                  "apply": "ItemExists",
+                  "def": {
+                    "ref": "search_ref01"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "BasicTokenFlow": {
+          "active": true,
+          "entity": "token",
+          "key$": "BasicTokenFlow",
+          "kind": "basic",
+          "name": "BasicTokenFlow",
+          "param": {},
+          "step": [
+            {
+              "a": true,
+              "d": {},
+              "i": {},
+              "m": {
+                "chain_id": "chain01",
+                "token_address": "token_address01"
+              },
+              "o": "list",
+              "s": [],
+              "v": [
+                {
+                  "apply": "ItemExists",
+                  "def": {
+                    "ref": "token_ref01"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "BasicTokenProfileFlow": {
+          "active": true,
+          "entity": "token_profile",
+          "key$": "BasicTokenProfileFlow",
+          "kind": "basic",
+          "name": "BasicTokenProfileFlow",
+          "param": {},
+          "step": [
+            {
+              "a": true,
+              "d": {},
+              "i": {},
+              "m": {},
+              "o": "list",
+              "s": [],
+              "v": [
+                {
+                  "apply": "ItemExists",
+                  "def": {
+                    "ref": "token_profile_ref01"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "BasicTokensPairFlow": {
+          "active": true,
+          "entity": "tokens_pair",
+          "key$": "BasicTokensPairFlow",
+          "kind": "basic",
+          "name": "BasicTokensPairFlow",
+          "param": {},
+          "step": [
+            {
+              "a": true,
+              "d": {},
+              "i": {},
+              "m": {
+                "chain_id": "chain01",
+                "token_address": "token_address01"
+              },
+              "o": "list",
+              "s": [],
+              "v": [
+                {
+                  "apply": "ItemExists",
+                  "def": {
+                    "ref": "tokens_pair_ref01"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "info": {
+        "auth": false,
+        "description": "The DEX Screener API.",
+        "servers": [
+          {
+            "url": "https://api.dexscreener.com"
+          }
+        ],
+        "title": "DEX Screener API",
+        "version": "1.0.0",
+        "website": "https://dexscreener.com"
+      },
+      "option": {},
+      "optspec": {
+        "allow": {
+          "method": "GET,PUT,POST,PATCH,DELETE,OPTIONS",
+          "op": "create,update,load,list,remove,command,direct,graphql"
+        },
+        "apikey": "",
+        "auth": {
+          "basic": false,
+          "in": "",
+          "name": "",
+          "prefix": ""
+        },
+        "base": "http://localhost:8000",
+        "clean": {
+          "active": true,
+          "hint": "0",
+          "keys": "key,secret,token,password,passwd,authorization,cookie,credential,signature",
+          "mask": "[redacted]",
+          "min": "4",
+          "values": ""
+        },
+        "entity": {
+          "`$CHILD`": {
+            "`$OPEN`": true,
+            "active": false,
+            "alias": {}
+          }
+        },
+        "extend": "`$ANY`",
+        "headers": {
+          "`$CHILD`": "`$STRING`"
+        },
+        "prefix": "",
+        "secret": "",
+        "server": {
+          "`$CHILD`": ""
+        },
+        "suffix": "",
+        "system": {
+          "fetch": "`$ANY`"
+        },
+        "test": {
+          "active": false,
+          "entity": {
+            "`$OPEN`": true
+          }
+        },
+        "utility": {}
+      },
+      "phase": {
+        "build": {
+          "active": true
+        },
+        "top": {
+          "active": true
+        }
+      },
+      "repo": {
+        "host": "github.com",
+        "path": "XiaoHai67890/dexscreener-sdk"
+      },
+      "target": {
+        "ts": {
+          "active": true,
+          "author": {
+            "name": "",
+            "url": ""
+          },
+          "base": "node_modules/@voxgig/sdkgen/project/.sdk",
+          "comment": {
+            "line": "//"
+          },
+          "deps": {
+            "@types/node": {
+              "active": true,
+              "kind": "dev",
+              "version": "^25.6.0"
+            },
+            "typescript": {
+              "active": true,
+              "kind": "dev",
+              "version": "^5.9.3"
+            }
+          },
+          "ext": "ts",
+          "feature": {
+            "fullset": [],
+            "trim": true
+          },
+          "module": {
+            "goversion": "",
+            "name": "dexscreener",
+            "package": "",
+            "path": ""
+          },
+          "name": "ts",
+          "origname": "",
+          "output": {
+            "adopt": false,
+            "create": true,
+            "path": "",
+            "repo": "",
+            "root": false,
+            "sdkrel": ""
+          },
+          "package": "@voxgig/sdkgen",
+          "provides": {
+            "schema": true,
+            "sekreto": true
+          },
+          "publish": {
+            "registry": {
+              "active": false,
+              "name": "npm",
+              "package": "@xiaohai67890/dexscreener-sdk",
+              "state": "pending",
+              "url": "https://registry.npmjs.org",
+              "vault": {
+                "alias": "npm",
+                "env": "",
+                "recipe": "npm"
+              }
+            },
+            "tag": {
+              "active": true,
+              "prefix": "",
+              "vault": {
+                "alias": "github",
+                "recipe": "github"
+              },
+              "via": "port"
+            },
+            "version": "0.0.1"
+          },
+          "superseded": [
+            "test/runner.ts",
+            "test/vendor/omni/compat.ts",
+            "src/feature/secrets/sekreto/Providers.ts",
+            "src/feature/secrets/sekreto/Sigv4.ts",
+            "src/feature/secrets/sekreto/provider/Registry.ts",
+            "src/feature/secrets/sekreto/provider/http.ts"
+          ],
+          "title": "TypeScript"
+        }
+      },
+      "test": {
+        "live": {
+          "app": false,
+          "base": "",
+          "strict": true
+        }
+      }
+    }
+  },
+  "name": "dexscreener",
+  "name-": "dexscreener",
+  "name_": "dexscreener",
+  "name__orig": "dexscreener",
+  "origin": "voxgig-sdk"
+}

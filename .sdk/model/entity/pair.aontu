@@ -1,0 +1,111 @@
+# Entity: pair
+
+main: kit: entity: pair: {
+
+  alias: field: {}
+
+  fields: {
+    id: {
+      h: "Id"
+      n: "id"
+      r: false
+      t: "`$STRING`"
+    }
+    pairs: {
+      h: "Pairs"
+      n: "pairs"
+      r: false
+      t: "`$ARRAY`"
+    }
+    schemaVersion: {
+      h: "Schema Version"
+      n: "schemaVersion"
+      r: false
+      t: "`$STRING`"
+    }
+  }
+
+  id: {
+    field: "id"
+    name: "id"
+    parts: [
+      "chain_id"
+      "pair_id"
+    ]
+    sep: "/"
+  }
+
+  name: "pair"
+  op: {
+    load: {
+      name: "load"
+      points: [
+        {
+          co: {
+            id: "GET /latest/dex/pairs/{chainId}/{pairId}"
+            source: "openapi3"
+            version: 2
+          }
+          g: {
+            params: [
+              {
+                ex: "solana"
+                k: "param"
+                n: "chain_id"
+                or: "chainId"
+                r: true
+                t: "`$STRING`"
+              }
+              {
+                ex: "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN"
+                k: "param"
+                n: "pair_id"
+                or: "pairId"
+                r: true
+                t: "`$STRING`"
+              }
+            ]
+          }
+          m: "GET"
+          o: "/latest/dex/pairs/{chainId}/{pairId}"
+          q: {
+            exist: [
+              "chain_id"
+              "pair_id"
+            ]
+          }
+          r: {
+            param: {
+              chainId: "chain_id"
+              pairId: "pair_id"
+            }
+          }
+          s: [
+            {
+              lit: "latest"
+            }
+            {
+              lit: "dex"
+            }
+            {
+              lit: "pairs"
+            }
+            {
+              var: "chain_id"
+            }
+            {
+              var: "pair_id"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+      ]
+    }
+  }
+
+
+
+}

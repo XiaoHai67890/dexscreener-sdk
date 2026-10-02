@@ -1,0 +1,171 @@
+# Entity: search
+
+main: kit: entity: search: {
+
+  alias: field: {}
+
+  fields: {
+    baseToken: {
+      h: "Base Token"
+      n: "baseToken"
+      r: false
+      t: "`$OBJECT`"
+    }
+    boosts: {
+      h: "Boosts"
+      n: "boosts"
+      r: false
+      t: "`$OBJECT`"
+    }
+    chainId: {
+      h: "Chain Id"
+      n: "chainId"
+      r: false
+      t: "`$STRING`"
+    }
+    dexId: {
+      h: "Dex Id"
+      n: "dexId"
+      r: false
+      t: "`$STRING`"
+    }
+    fdv: {
+      h: "Fdv"
+      n: "fdv"
+      r: false
+      t: "`$NUMBER`"
+    }
+    info: {
+      h: "Info"
+      n: "info"
+      r: false
+      t: "`$OBJECT`"
+    }
+    labels: {
+      h: "Labels"
+      n: "labels"
+      r: false
+      t: "`$ARRAY`"
+    }
+    liquidity: {
+      h: "Liquidity"
+      n: "liquidity"
+      r: false
+      t: "`$OBJECT`"
+    }
+    marketCap: {
+      h: "Market Cap"
+      n: "marketCap"
+      r: false
+      t: "`$NUMBER`"
+    }
+    pairAddress: {
+      h: "Pair Address"
+      n: "pairAddress"
+      r: false
+      t: "`$STRING`"
+    }
+    pairCreatedAt: {
+      h: "Pair Created At"
+      n: "pairCreatedAt"
+      r: false
+      t: "`$INTEGER`"
+    }
+    priceChange: {
+      h: "Price Change"
+      n: "priceChange"
+      r: false
+      t: "`$OBJECT`"
+    }
+    priceNative: {
+      h: "Price Native"
+      n: "priceNative"
+      r: false
+      t: "`$STRING`"
+    }
+    priceUsd: {
+      h: "Price Usd"
+      n: "priceUsd"
+      r: false
+      t: "`$STRING`"
+    }
+    quoteToken: {
+      h: "Quote Token"
+      n: "quoteToken"
+      r: false
+      t: "`$OBJECT`"
+    }
+    txns: {
+      h: "Txns"
+      n: "txns"
+      r: false
+      t: "`$OBJECT`"
+    }
+    url: {
+      fo: "uri"
+      h: "Url"
+      n: "url"
+      r: false
+      t: "`$STRING`"
+    }
+    volume: {
+      h: "Volume"
+      n: "volume"
+      r: false
+      t: "`$OBJECT`"
+    }
+  }
+
+  name: "search"
+  op: {
+    list: {
+      name: "list"
+      points: [
+        {
+          co: {
+            id: "GET /latest/dex/search"
+            source: "openapi3"
+            version: 2
+          }
+          g: {
+            query: [
+              {
+                ex: "SOL/USDC"
+                k: "query"
+                n: "q"
+                or: "q"
+                r: true
+                t: "`$STRING`"
+              }
+            ]
+          }
+          m: "GET"
+          o: "/latest/dex/search"
+          q: {
+            exist: [
+              "q"
+            ]
+          }
+          s: [
+            {
+              lit: "latest"
+            }
+            {
+              lit: "dex"
+            }
+            {
+              lit: "search"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body.pairs`"
+          }
+        }
+      ]
+    }
+  }
+
+
+
+}

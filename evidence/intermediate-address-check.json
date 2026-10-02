@@ -1,0 +1,54 @@
+{
+  "startedAt": "2026-10-02T05:59:30.829Z",
+  "runtime": "v24.19.0",
+  "mode": "live",
+  "query": "WETH/USDC",
+  "requests": [
+    {
+      "method": "GET",
+      "url": "https://api.dexscreener.com/latest/dex/search?q=WETH%2FUSDC",
+      "status": 200,
+      "durationMs": 156
+    },
+    {
+      "method": "GET",
+      "url": "https://api.dexscreener.com/latest/dex/pairs/robinhood/0x708aEf3736C15FCc1c0b3606C5b9a33fe8656784",
+      "status": 200,
+      "durationMs": 343
+    }
+  ],
+  "checks": [
+    {
+      "name": "search returns a non-empty array",
+      "pass": true
+    },
+    {
+      "name": "pair detail matches search chain and address",
+      "pass": true
+    }
+  ],
+  "scope": "Search and pair-detail only; other generated endpoints are not live-verified.",
+  "search": {
+    "count": 30,
+    "firstItemConstructor": "SearchEntity",
+    "firstItemHasDataMethod": true
+  },
+  "selected": {
+    "chainId": "robinhood",
+    "dexId": "uniswap",
+    "pairAddress": "0x708aEf3736C15FCc1c0b3606C5b9a33fe8656784",
+    "baseSymbol": "BTCETHUSDTBNBUSDCXRPSOLTRXHYPEDOGERAINZECDELLEOXLMXMRLINKADACCDAIBCHUSD1USDEGRAM",
+    "quoteSymbol": "WETH"
+  },
+  "detail": {
+    "count": 1,
+    "returnConstructor": "PairEntity",
+    "bodyKeys": [
+      "pair",
+      "pairs",
+      "schemaVersion"
+    ]
+  },
+  "ok": true,
+  "completedAt": "2026-10-02T05:59:31.452Z"
+}

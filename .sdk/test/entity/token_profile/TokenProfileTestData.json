@@ -1,0 +1,37 @@
+{
+  "existing": {
+    "token_profile": {
+      "TOKEN_PROFILE00": {
+        "label": "s1e",
+        "type": "s1f",
+        "url": "s20"
+      },
+      "TOKEN_PROFILE01": {
+        "label": "s3c",
+        "type": "s3d",
+        "url": "s3e"
+      },
+      "TOKEN_PROFILE02": {
+        "label": "s5a",
+        "type": "s5b",
+        "url": "s5c"
+      }
+    }
+  },
+  "new": {
+    "token_profile": {
+      "token_profile_ref01": {
+        "label": "s78",
+        "type": "s79",
+        "url": "s7a"
+      }
+    }
+  },
+  "requests": {
+    "GET /token-profiles/latest/v1": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "existing": {
+    "order": {
+      "ORDER00": {
+        "paymentTimestamp": 30,
+        "status": "s1f",
+        "type": "s20",
+        "chain_id": "CHAIN01",
+        "token_address": "TOKEN_ADDRESS01"
+      },
+      "ORDER01": {
+        "paymentTimestamp": 60,
+        "status": "s3d",
+        "type": "s3e",
+        "chain_id": "CHAIN01",
+        "token_address": "TOKEN_ADDRESS01"
+      },
+      "ORDER02": {
+        "paymentTimestamp": 90,
+        "status": "s5b",
+        "type": "s5c",
+        "chain_id": "CHAIN01",
+        "token_address": "TOKEN_ADDRESS01"
+      }
+    }
+  },
+  "new": {
+    "order": {
+      "order_ref01": {
+        "paymentTimestamp": 120,
+        "status": "s79",
+        "type": "s7a"
+      }
+    }
+  },
+  "requests": {
+    "GET /orders/v1/{chainId}/{tokenAddress}": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

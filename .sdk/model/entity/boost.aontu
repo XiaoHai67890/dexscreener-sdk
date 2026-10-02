@@ -1,0 +1,88 @@
+# Entity: boost
+
+main: kit: entity: boost: {
+
+  alias: field: {}
+
+  fields: {
+    label: {
+      h: "Label"
+      n: "label"
+      r: false
+      t: "`$STRING`"
+    }
+    type: {
+      h: "Type"
+      n: "type"
+      r: false
+      t: "`$STRING`"
+    }
+    url: {
+      fo: "uri"
+      h: "Url"
+      n: "url"
+      r: false
+      t: "`$STRING`"
+    }
+  }
+
+  name: "boost"
+  op: {
+    list: {
+      name: "list"
+      points: [
+        {
+          co: {
+            id: "GET /token-boosts/latest/v1"
+            source: "openapi3"
+            version: 2
+          }
+          m: "GET"
+          o: "/token-boosts/latest/v1"
+          s: [
+            {
+              lit: "token-boosts"
+            }
+            {
+              lit: "latest"
+            }
+            {
+              lit: "v1"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body.links`"
+          }
+        }
+        {
+          co: {
+            id: "GET /token-boosts/top/v1"
+            source: "openapi3"
+            version: 2
+          }
+          m: "GET"
+          o: "/token-boosts/top/v1"
+          s: [
+            {
+              lit: "token-boosts"
+            }
+            {
+              lit: "top"
+            }
+            {
+              lit: "v1"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body.links`"
+          }
+        }
+      ]
+    }
+  }
+
+
+
+}

@@ -1,0 +1,11 @@
+# Flows
+
+@"./BasicAdsFlow.aontu"
+@"./BasicBoostFlow.aontu"
+@"./BasicCommunityTakeoverFlow.aontu"
+@"./BasicOrderFlow.aontu"
+@"./BasicPairFlow.aontu"
+@"./BasicSearchFlow.aontu"
+@"./BasicTokenFlow.aontu"
+@"./BasicTokenProfileFlow.aontu"
+@"./BasicTokensPairFlow.aontu"

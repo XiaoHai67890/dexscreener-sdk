@@ -1,0 +1,22 @@
+# BasicCommunityTakeoverFlow
+
+main: kit: flow: BasicCommunityTakeoverFlow:
+{
+  entity: "community_takeover",
+  kind: "basic",
+  name: "BasicCommunityTakeoverFlow",
+  step: [
+    {
+      o: "list",
+      v: [
+        {
+          apply: "ItemExists",
+          def: {
+            ref: "community_takeover_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicCommunityTakeoverFlow"
+}

@@ -1,0 +1,113 @@
+{
+  "checked_at": "2026-10-02T13:43:47.530398+08:00",
+  "scope": "Read-only topic feasibility research; not a Voxgig-generated SDK test.",
+  "catalogue": {
+    "url": "https://github.com/orgs/voxgig-sdk/repositories",
+    "api_url_pattern": "https://api.github.com/orgs/voxgig-sdk/repos?per_page=100&page={1..9}",
+    "page_sizes": [
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      3
+    ],
+    "total_repositories": 803,
+    "checked_fields": [
+      "name",
+      "description"
+    ],
+    "case_insensitive_pattern": "defi.?llama|dex.?screener|llama|screener",
+    "matches": [],
+    "limitation": "Repository names and descriptions checked, not contents of all 803 repositories; catalogue can change."
+  },
+  "recommended": {
+    "name": "DEX Screener",
+    "official_documentation": "https://docs.dexscreener.com/api/reference",
+    "official_openapi_url": "https://198140802-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F7OmRM9NOmlC1POtFwsnX%2Fuploads%2FyW7tUJPqX1ECjLZX0TfH%2Fopenapi-spec.yml?alt=media&token=155a7049-dc39-4be1-aa19-5eeb66388513",
+    "spec_version": "3.0.3",
+    "spec_fetch_status": 200,
+    "spec_bytes": 12135,
+    "spec_path_count": 10,
+    "spec_security_definition_present": false,
+    "local_openapi_file": ".sdk/def/dexscreener-openapi-original.yml",
+    "spec_sha256": "e40964ed9f7c598680b80abf4d296c23f20d67991735ada30c4a9a5ef5d12992"
+  },
+  "checks": [
+    {
+      "method": "GET",
+      "url": "https://api.dexscreener.com/latest/dex/search?q=WETH%2FUSDC",
+      "http_status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_keys": [
+        "schemaVersion",
+        "pairs"
+      ],
+      "pair_count": 30,
+      "matching_symbol_pair_count": 22,
+      "selection": "Exact WETH and USDC symbol pair; no Ethereum pair in this 30-item result, selected returned Solana pair. Symbols are data filtering only, not independent identity or investment verification.",
+      "sample": {
+        "chainId": "solana",
+        "dexId": "orca",
+        "pairAddress": "AU971DrPyhhrpRnmEBp5pDTWL2ny7nofb5vYBjDJkR2E",
+        "baseToken": {
+          "address": "7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs",
+          "name": "Wrapped Ether (Wormhole)",
+          "symbol": "WETH",
+          "name_truncated": false,
+          "symbol_truncated": false
+        },
+        "quoteToken": {
+          "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "name": "USD Coin",
+          "symbol": "USDC",
+          "name_truncated": false,
+          "symbol_truncated": false
+        }
+      },
+      "sample_pair_fields": [
+        "chainId",
+        "dexId",
+        "url",
+        "pairAddress",
+        "labels",
+        "baseToken",
+        "quoteToken",
+        "priceNative",
+        "priceUsd",
+        "txns",
+        "volume",
+        "priceChange",
+        "liquidity",
+        "fdv",
+        "marketCap",
+        "pairCreatedAt"
+      ]
+    },
+    {
+      "method": "GET",
+      "url": "https://api.dexscreener.com/latest/dex/pairs/solana/AU971DrPyhhrpRnmEBp5pDTWL2ny7nofb5vYBjDJkR2E",
+      "http_status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "response_keys": [
+        "schemaVersion",
+        "pairs",
+        "pair"
+      ],
+      "pair_count": 1,
+      "first_pair_matches_requested_address": true
+    }
+  ],
+  "unknowns": [
+    "Voxgig generator actual compatibility has not been tested.",
+    "Official DEX Screener downloadable OpenAPI has 10 paths; the current reference page also lists newer paths not in that file. The proposed search/pair scope is present in the file.",
+    "This public API does not exercise authentication; call out that limitation in the final task report."
+  ],
+  "observations": [
+    "Broad free-text search can return tokens with very long spam-like names; search results need filtering. The SDK smoke test should assert response structure, not assume first result is a particular asset.",
+    "Pair detail response also contains a singular pair field beyond schemaVersion and pairs. Compare generated typings with real response without silently declaring generator at fault."
+  ]
+}

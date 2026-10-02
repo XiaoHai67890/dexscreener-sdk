@@ -1,0 +1,54 @@
+{
+  "startedAt": "2026-10-02T06:00:26.452Z",
+  "runtime": "v24.19.0",
+  "mode": "live",
+  "query": "WETH/USDC",
+  "requests": [
+    {
+      "method": "GET",
+      "url": "https://api.dexscreener.com/latest/dex/search?q=WETH%2FUSDC",
+      "status": 200,
+      "durationMs": 223
+    },
+    {
+      "method": "GET",
+      "url": "https://api.dexscreener.com/latest/dex/pairs/solana/AU971DrPyhhrpRnmEBp5pDTWL2ny7nofb5vYBjDJkR2E",
+      "status": 200,
+      "durationMs": 730
+    }
+  ],
+  "checks": [
+    {
+      "name": "search returns a non-empty array",
+      "pass": true
+    },
+    {
+      "name": "pair detail matches search chain and address",
+      "pass": true
+    }
+  ],
+  "scope": "Search and pair-detail only; other generated endpoints are not live-verified.",
+  "search": {
+    "count": 30,
+    "firstItemConstructor": "SearchEntity",
+    "firstItemHasDataMethod": true
+  },
+  "selected": {
+    "chainId": "solana",
+    "dexId": "orca",
+    "pairAddress": "AU971DrPyhhrpRnmEBp5pDTWL2ny7nofb5vYBjDJkR2E",
+    "baseSymbol": "WETH",
+    "quoteSymbol": "USDC"
+  },
+  "detail": {
+    "count": 1,
+    "returnConstructor": "PairEntity",
+    "bodyKeys": [
+      "pair",
+      "pairs",
+      "schemaVersion"
+    ]
+  },
+  "ok": true,
+  "completedAt": "2026-10-02T06:00:27.477Z"
+}
